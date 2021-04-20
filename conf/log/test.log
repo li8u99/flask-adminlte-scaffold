@@ -1,0 +1,53 @@
+2021-04-20 22:32:38,605 werkzeug     INFO      * Restarting with stat
+2021-04-20 22:32:39,182 werkzeug     WARNING   * Debugger is active!
+2021-04-20 22:32:39,375 werkzeug     INFO      * Debugger PIN: 371-373-843
+2021-04-20 22:32:40,543 werkzeug     INFO      * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+2021-04-20 22:33:29,084 werkzeug     INFO      * Detected change in 'D:\\Tools\\Script\\flask-adminlte-scaffold\\manage.py', reloading
+2021-04-20 22:33:29,196 werkzeug     INFO      * Restarting with stat
+2021-04-20 22:33:29,749 werkzeug     WARNING   * Debugger is active!
+2021-04-20 22:33:29,757 werkzeug     INFO      * Debugger PIN: 371-373-843
+2021-04-20 22:33:29,771 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-04-20 22:33:36,026 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:36] "GET / HTTP/1.1" 302 -
+2021-04-20 22:33:36,175 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:36] "GET /login?next=%2F HTTP/1.1" 200 -
+2021-04-20 22:33:36,197 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:36] "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+2021-04-20 22:33:36,201 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:36] "GET /static/plugins/iCheck/square/blue.css HTTP/1.1" 200 -
+2021-04-20 22:33:36,204 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:36] "GET /static/plugins/pace/pace.min.css HTTP/1.1" 200 -
+2021-04-20 22:33:36,207 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:36] "GET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1" 200 -
+2021-04-20 22:33:36,211 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:36] "GET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1" 200 -
+2021-04-20 22:33:36,214 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:36] "GET /static/css/global.css HTTP/1.1" 200 -
+2021-04-20 22:33:36,216 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:36] "GET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1" 200 -
+2021-04-20 22:33:36,219 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:36] "GET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+2021-04-20 22:33:36,222 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:36] "GET /static/plugins/iCheck/icheck.min.js HTTP/1.1" 200 -
+2021-04-20 22:33:36,225 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:36] "GET /static/plugins/pace/pace.min.js HTTP/1.1" 200 -
+2021-04-20 22:33:36,228 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:36] "GET /static/js/global.js HTTP/1.1" 200 -
+2021-04-20 22:33:36,578 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:36] "GET /static/plugins/iCheck/square/blue.png HTTP/1.1" 200 -
+2021-04-20 22:33:36,584 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:36] "GET /static/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 -
+2021-04-20 22:33:36,709 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:36] "GET /favicon.ico HTTP/1.1" 404 -
+2021-04-20 22:33:42,234 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`username` = %s) LIMIT %s OFFSET %s', ['admin', 1, 0])
+2021-04-20 22:33:42,253 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:42] "POST /login?next=%2F HTTP/1.1" 302 -
+2021-04-20 22:33:42,260 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-04-20 22:33:42,262 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:42] "GET / HTTP/1.1" 302 -
+2021-04-20 22:33:42,267 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-04-20 22:33:42,273 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:42] "GET /index HTTP/1.1" 200 -
+2021-04-20 22:33:42,303 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:42] "GET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 -
+2021-04-20 22:33:42,308 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:42] "GET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1" 200 -
+2021-04-20 22:33:42,312 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:42] "GET /static/plugins/bootstrap-slider/slider.css HTTP/1.1" 200 -
+2021-04-20 22:33:42,315 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:42] "GET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1" 200 -
+2021-04-20 22:33:42,318 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:42] "GET /static/plugins/select2/select2.min.css HTTP/1.1" 200 -
+2021-04-20 22:33:42,361 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:42] "GET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1" 200 -
+2021-04-20 22:33:42,364 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:42] "GET /static/plugins/fastclick/fastclick.js HTTP/1.1" 200 -
+2021-04-20 22:33:42,367 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:42] "GET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1" 200 -
+2021-04-20 22:33:42,371 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:42] "GET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1" 200 -
+2021-04-20 22:33:42,374 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:42] "GET /static/plugins/select2/select2.full.min.js HTTP/1.1" 200 -
+2021-04-20 22:33:42,378 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:42] "GET /static/plugins/adminlte/js/app.min.js HTTP/1.1" 200 -
+2021-04-20 22:33:42,381 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:42] "GET /static/images/avatar.jpg HTTP/1.1" 200 -
+2021-04-20 22:33:42,427 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:42] "GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 -
+2021-04-20 22:33:42,433 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:42] "GET /static/plugins/ionicons/fonts/ionicons.ttf?v=2.0.0 HTTP/1.1" 200 -
+2021-04-20 22:33:42,484 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-04-20 22:33:42,487 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:42] "GET /api/stats/summary HTTP/1.1" 404 -
+2021-04-20 22:33:45,980 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-04-20 22:33:45,993 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:45] "GET /notifyedit HTTP/1.1" 200 -
+2021-04-20 22:33:46,537 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-04-20 22:33:46,539 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `cfgnotify` AS `t1`) AS `_wrapped`', [])
+2021-04-20 22:33:46,541 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`check_order`, `t1`.`notify_type`, `t1`.`notify_name`, `t1`.`notify_number`, `t1`.`status` FROM `cfgnotify` AS `t1` LIMIT %s OFFSET %s', [10, 0])
+2021-04-20 22:33:46,552 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:46] "GET /notifylist HTTP/1.1" 200 -
