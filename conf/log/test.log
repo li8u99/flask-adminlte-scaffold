@@ -51,3 +51,784 @@
 2021-04-20 22:33:46,539 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `cfgnotify` AS `t1`) AS `_wrapped`', [])
 2021-04-20 22:33:46,541 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`check_order`, `t1`.`notify_type`, `t1`.`notify_name`, `t1`.`notify_number`, `t1`.`status` FROM `cfgnotify` AS `t1` LIMIT %s OFFSET %s', [10, 0])
 2021-04-20 22:33:46,552 werkzeug     INFO     127.0.0.1 - - [20/Apr/2021 22:33:46] "GET /notifylist HTTP/1.1" 200 -
+2021-07-15 14:24:19,562 werkzeug     INFO      * Restarting with stat
+2021-07-15 14:24:19,743 werkzeug     WARNING   * Debugger is active!
+2021-07-15 14:24:19,745 werkzeug     INFO      * Debugger PIN: 619-803-134
+2021-07-15 14:24:19,796 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-15 14:24:21,469 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:21] "[32mGET / HTTP/1.1[0m" 302 -
+2021-07-15 14:24:21,492 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:21] "GET /login?next=%2F HTTP/1.1" 200 -
+2021-07-15 14:24:21,893 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:21] "GET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+2021-07-15 14:24:21,893 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:21] "GET /static/css/global.css HTTP/1.1" 200 -
+2021-07-15 14:24:21,893 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:21] "GET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1" 200 -
+2021-07-15 14:24:21,893 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:21] "GET /static/plugins/pace/pace.min.css HTTP/1.1" 200 -
+2021-07-15 14:24:21,895 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:21] "GET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1" 200 -
+2021-07-15 14:24:21,897 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:21] "GET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1" 200 -
+2021-07-15 14:24:21,899 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:21] "GET /static/plugins/iCheck/square/blue.css HTTP/1.1" 200 -
+2021-07-15 14:24:21,900 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:21] "GET /static/plugins/iCheck/icheck.min.js HTTP/1.1" 200 -
+2021-07-15 14:24:21,900 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:21] "GET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1" 200 -
+2021-07-15 14:24:21,902 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:21] "GET /static/plugins/pace/pace.min.js HTTP/1.1" 200 -
+2021-07-15 14:24:21,904 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:21] "GET /static/js/global.js HTTP/1.1" 200 -
+2021-07-15 14:24:21,942 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:21] "GET /static/plugins/bootstrap/fonts/glyphicons-halflings-regular.woff2 HTTP/1.1" 200 -
+2021-07-15 14:24:21,953 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:21] "GET /static/plugins/iCheck/square/blue.png HTTP/1.1" 200 -
+2021-07-15 14:24:21,982 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2021-07-15 14:24:26,945 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`username` = %s) LIMIT %s OFFSET %s', ['admin', 1, 0])
+2021-07-15 14:24:26,947 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:26] "POST /login?next=%2F HTTP/1.1" 200 -
+2021-07-15 14:24:26,961 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:26] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 14:24:26,962 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:26] "[36mGET /static/plugins/iCheck/square/blue.css HTTP/1.1[0m" 304 -
+2021-07-15 14:24:26,963 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:26] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 14:24:26,964 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:26] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 14:24:26,965 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:26] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 14:24:26,966 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:26] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 14:24:26,969 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:26] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 14:24:26,969 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:26] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 14:24:26,972 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:26] "[36mGET /static/plugins/iCheck/icheck.min.js HTTP/1.1[0m" 304 -
+2021-07-15 14:24:26,973 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:26] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 14:24:26,974 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 14:24:26] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:01:33,219 werkzeug     INFO      * Restarting with stat
+2021-07-15 15:01:33,402 werkzeug     WARNING   * Debugger is active!
+2021-07-15 15:01:33,403 werkzeug     INFO      * Debugger PIN: 619-803-134
+2021-07-15 15:01:33,453 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-15 15:01:40,724 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`username` = %s) LIMIT %s OFFSET %s', ['admin', 1, 0])
+2021-07-15 15:01:40,727 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:40] "[32mPOST /login?next=%2F HTTP/1.1[0m" 302 -
+2021-07-15 15:01:40,730 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:01:40,732 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:40] "[32mGET / HTTP/1.1[0m" 302 -
+2021-07-15 15:01:40,736 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:01:40,750 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:40] "GET /index HTTP/1.1" 200 -
+2021-07-15 15:01:41,166 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:41] "GET /static/plugins/bootstrap-slider/slider.css HTTP/1.1" 200 -
+2021-07-15 15:01:41,166 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:41] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:01:41,166 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:41] "GET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1" 200 -
+2021-07-15 15:01:41,167 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:41] "GET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1" 200 -
+2021-07-15 15:01:41,167 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:41] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:01:41,167 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:41] "GET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1" 200 -
+2021-07-15 15:01:41,169 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:41] "GET /static/plugins/select2/select2.min.css HTTP/1.1" 200 -
+2021-07-15 15:01:41,171 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:41] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:01:41,172 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:41] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:01:41,174 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:41] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:01:41,174 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:41] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:01:41,180 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:41] "GET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1" 200 -
+2021-07-15 15:01:41,181 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:41] "GET /static/plugins/fastclick/fastclick.js HTTP/1.1" 200 -
+2021-07-15 15:01:41,182 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:41] "GET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1" 200 -
+2021-07-15 15:01:41,183 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:41] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:01:41,184 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:41] "GET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1" 200 -
+2021-07-15 15:01:41,186 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:41] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:01:41,187 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:41] "GET /static/plugins/select2/select2.full.min.js HTTP/1.1" 200 -
+2021-07-15 15:01:41,189 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:41] "GET /static/plugins/adminlte/js/app.min.js HTTP/1.1" 200 -
+2021-07-15 15:01:41,190 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:41] "GET /static/images/avatar.jpg HTTP/1.1" 200 -
+2021-07-15 15:01:41,192 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:41] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:01:41,223 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:41] "GET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1" 200 -
+2021-07-15 15:01:41,223 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:41] "GET /static/plugins/ionicons/fonts/ionicons.ttf?v=2.0.0 HTTP/1.1" 200 -
+2021-07-15 15:01:41,239 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:01:41,242 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:41] "[33mGET /api/stats/summary HTTP/1.1[0m" 404 -
+2021-07-15 15:01:51,012 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:01:51,034 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:51] "GET /notifyedit HTTP/1.1" 200 -
+2021-07-15 15:01:51,049 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:51] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:01:51,050 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:51] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:01:51,052 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:51] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:01:51,054 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:51] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:01:51,056 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:51] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:01:51,056 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:51] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:01:51,057 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:51] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:01:51,058 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:51] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:01:51,059 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:51] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:01:51,061 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:51] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:01:51,062 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:51] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:01:51,063 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:51] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:01:51,064 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:51] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:01:51,066 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:51] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:01:51,067 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:51] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:01:51,068 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:51] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:01:51,069 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:51] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:01:51,070 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:51] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:01:51,071 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:51] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:01:51,073 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:51] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:01:51,074 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:51] "[36mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 304 -
+2021-07-15 15:01:51,074 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:01:51] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:03:53,343 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:03:53,347 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:53] "GET /notifyedit HTTP/1.1" 200 -
+2021-07-15 15:03:53,360 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:53] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:03:53,363 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:53] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:03:53,364 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:53] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:03:53,364 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:53] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:03:53,365 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:53] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:03:53,367 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:53] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:03:53,371 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:53] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:03:53,373 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:53] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:03:53,374 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:53] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:03:53,375 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:53] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:03:53,376 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:53] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:03:53,378 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:53] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:03:53,379 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:53] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:03:53,380 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:53] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:03:53,381 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:53] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:03:53,382 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:53] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:03:53,384 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:53] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:03:53,385 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:53] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:03:53,387 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:53] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:03:53,388 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:53] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:03:53,389 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:53] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:03:53,391 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:53] "[36mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 304 -
+2021-07-15 15:03:54,505 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:03:54,508 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `cfgnotify` AS `t1`) AS `_wrapped`', [])
+2021-07-15 15:03:54,508 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`check_order`, `t1`.`notify_type`, `t1`.`notify_name`, `t1`.`notify_number`, `t1`.`status` FROM `cfgnotify` AS `t1` LIMIT %s OFFSET %s', [10, 0])
+2021-07-15 15:03:54,514 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:54] "GET /notifylist HTTP/1.1" 200 -
+2021-07-15 15:03:54,530 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:54] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:03:54,532 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:54] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:03:54,532 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:54] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:03:54,533 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:54] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:03:54,534 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:54] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:03:54,535 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:54] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:03:54,536 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:54] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:03:54,539 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:54] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:03:54,541 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:54] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:03:54,542 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:54] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:03:54,543 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:54] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:03:54,544 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:54] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:03:54,545 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:54] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:03:54,546 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:54] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:03:54,548 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:54] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:03:54,549 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:54] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:03:54,550 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:54] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:03:54,551 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:54] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:03:54,553 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:54] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:03:54,554 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:54] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:03:54,555 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:03:54] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:04:28,991 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:04:28,995 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:04:28] "GET /index HTTP/1.1" 200 -
+2021-07-15 15:04:29,008 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:04:29] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:04:29,011 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:04:29] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:04:29,012 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:04:29] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:04:29,012 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:04:29] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:04:29,013 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:04:29] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:04:29,015 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:04:29] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:04:29,017 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:04:29] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:04:29,018 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:04:29] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:04:29,020 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:04:29] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:04:29,021 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:04:29] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:04:29,022 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:04:29] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:04:29,023 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:04:29] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:04:29,024 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:04:29] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:04:29,025 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:04:29] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:04:29,027 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:04:29] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:04:29,029 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:04:29] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:04:29,029 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:04:29] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:04:29,029 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:04:29] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:04:29,030 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:04:29] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:04:29,032 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:04:29] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:04:29,033 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:04:29] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:04:29,040 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:04:29] "[36mGET /static/plugins/ionicons/fonts/ionicons.ttf?v=2.0.0 HTTP/1.1[0m" 304 -
+2021-07-15 15:04:29,046 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:04:29,048 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:04:29] "[33mGET /api/stats/summary HTTP/1.1[0m" 404 -
+2021-07-15 15:05:25,717 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:05:25,720 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:25] "GET /notifyedit HTTP/1.1" 200 -
+2021-07-15 15:05:25,739 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:25] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:25,740 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:25] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:25,741 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:25] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:25,742 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:25] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:25,743 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:25] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:25,744 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:25] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:25,746 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:25] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:25,746 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:25] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:25,747 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:25] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:25,748 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:25] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:25,750 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:25] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:25,753 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:25] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:25,754 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:25] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:25,756 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:25] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:25,757 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:25] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:25,758 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:25] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:25,759 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:25] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:25,761 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:25] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:25,762 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:25] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:25,763 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:25] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:05:25,764 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:25] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:27,478 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:05:27,481 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `cfgnotify` AS `t1`) AS `_wrapped`', [])
+2021-07-15 15:05:27,482 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`check_order`, `t1`.`notify_type`, `t1`.`notify_name`, `t1`.`notify_number`, `t1`.`status` FROM `cfgnotify` AS `t1` LIMIT %s OFFSET %s', [10, 0])
+2021-07-15 15:05:27,484 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:27] "GET /notifylist HTTP/1.1" 200 -
+2021-07-15 15:05:27,500 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:27] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:27,505 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:27] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:27,506 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:27] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:27,506 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:27] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:27,507 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:27] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:27,508 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:27] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:27,509 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:27] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:27,511 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:27] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:27,512 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:27] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:27,513 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:27] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:27,514 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:27] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:27,516 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:27] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:27,519 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:27] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:27,520 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:27] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:27,520 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:27] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:27,522 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:27] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:27,523 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:27] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:27,524 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:27] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:27,525 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:27] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:27,527 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:27] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:05:27,527 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:27] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:30,334 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:05:30,337 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:30] "GET /index HTTP/1.1" 200 -
+2021-07-15 15:05:30,353 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:30] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:30,355 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:30] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:30,355 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:30] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:30,357 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:30] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:30,358 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:30] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:30,360 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:30] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:30,361 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:30] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:30,362 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:30] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:30,363 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:30] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:30,365 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:30] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:05:30,367 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:30] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:30,370 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:30] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:30,371 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:30] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:30,371 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:30] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:30,373 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:30] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:30,374 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:30] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:30,376 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:30] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:30,377 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:30] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:30,378 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:30] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:30,378 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:30] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:05:30,379 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:30] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:05:30,388 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:05:30,391 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:05:30] "[33mGET /api/stats/summary HTTP/1.1[0m" 404 -
+2021-07-15 15:08:47,554 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:08:47,566 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:47] "GET /notifyedit HTTP/1.1" 200 -
+2021-07-15 15:08:47,582 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:47] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:08:47,584 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:47] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:08:47,584 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:47] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:08:47,585 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:47] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:08:47,586 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:47] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:08:47,587 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:47] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:08:47,588 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:47] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:08:47,589 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:47] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:08:47,590 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:47] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:08:47,590 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:47] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:08:47,592 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:47] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:08:47,594 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:47] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:08:47,597 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:47] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:08:47,600 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:47] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:08:47,600 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:47] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:08:47,601 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:47] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:08:47,602 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:47] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:08:47,604 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:47] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:08:47,604 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:47] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:08:47,605 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:47] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:08:47,606 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:47] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:08:58,849 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:08:58,852 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `cfgnotify` AS `t1`) AS `_wrapped`', [])
+2021-07-15 15:08:58,853 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`check_order`, `t1`.`notify_type`, `t1`.`notify_name`, `t1`.`notify_number`, `t1`.`status` FROM `cfgnotify` AS `t1` LIMIT %s OFFSET %s', [10, 0])
+2021-07-15 15:08:58,854 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:58] "GET /notifylist HTTP/1.1" 200 -
+2021-07-15 15:08:58,872 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:58] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:08:58,873 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:58] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:08:58,873 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:58] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:08:58,874 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:58] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:08:58,876 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:58] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:08:58,877 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:58] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:08:58,878 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:58] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:08:58,881 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:58] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:08:58,883 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:58] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:08:58,884 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:58] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:08:58,885 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:58] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:08:58,886 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:58] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:08:58,887 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:58] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:08:58,888 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:58] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:08:58,889 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:58] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:08:58,891 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:58] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:08:58,892 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:58] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:08:58,893 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:58] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:08:58,894 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:58] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:08:58,896 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:58] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:08:58,896 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:08:58] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:09:01,128 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:09:01,132 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:01] "GET /notifyedit HTTP/1.1" 200 -
+2021-07-15 15:09:01,148 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:01] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:09:01,151 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:01] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:09:01,152 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:01] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:09:01,152 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:01] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:09:01,153 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:01] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:09:01,155 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:01] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:09:01,156 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:01] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:09:01,157 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:01] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:09:01,158 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:01] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:09:01,159 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:01] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:09:01,160 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:01] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:09:01,162 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:01] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:09:01,163 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:01] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:09:01,164 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:01] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:09:01,165 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:01] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:09:01,167 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:01] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:09:01,168 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:01] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:09:01,169 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:01] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:09:01,170 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:01] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:09:01,171 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:01] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:09:01,172 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:01] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:09:29,224 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:09:29,227 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:29] "GET /notifyedit HTTP/1.1" 200 -
+2021-07-15 15:09:29,242 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:29] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:09:29,246 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:29] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:09:29,247 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:29] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:09:29,249 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:29] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:09:29,249 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:29] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:09:29,250 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:29] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:09:29,252 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:29] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:09:29,253 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:29] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:09:29,254 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:29] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:09:29,255 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:29] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:09:29,256 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:29] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:09:29,258 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:29] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:09:29,258 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:29] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:09:29,260 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:29] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:09:29,261 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:29] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:09:29,263 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:29] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:09:29,264 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:29] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:09:29,265 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:29] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:09:29,267 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:29] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:09:29,267 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:29] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:09:29,268 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:09:29] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:16:01,519 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:16:01,530 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:01] "GET /notifyedit HTTP/1.1" 200 -
+2021-07-15 15:16:01,547 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:01] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:01,550 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:01] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:01,551 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:01] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:01,551 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:01] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:01,551 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:01] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:01,552 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:01] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:01,553 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:01] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:01,555 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:01] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:01,556 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:01] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:01,556 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:01] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:01,559 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:01] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:01,560 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:01] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:01,561 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:01] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:01,564 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:01] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:01,564 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:01] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:01,565 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:01] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:01,566 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:01] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:01,567 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:01] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:01,568 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:01] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:01,569 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:01] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:01,570 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:01] "[36mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 304 -
+2021-07-15 15:16:01,571 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:01] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:16:03,690 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:16:03,692 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `cfgnotify` AS `t1`) AS `_wrapped`', [])
+2021-07-15 15:16:03,693 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`check_order`, `t1`.`notify_type`, `t1`.`notify_name`, `t1`.`notify_number`, `t1`.`status` FROM `cfgnotify` AS `t1` LIMIT %s OFFSET %s', [10, 0])
+2021-07-15 15:16:03,695 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:03] "GET /notifylist HTTP/1.1" 200 -
+2021-07-15 15:16:03,714 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:03] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:03,715 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:03] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:03,716 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:03] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:03,717 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:03] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:03,718 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:03] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:03,719 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:03] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:03,720 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:03] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:03,721 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:03] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:03,722 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:03] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:03,723 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:03] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:03,726 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:03] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:03,731 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:03] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:03,731 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:03] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:03,733 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:03] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:03,733 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:03] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:03,734 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:03] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:03,735 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:03] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:03,737 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:03] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:03,737 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:03] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:03,738 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:03] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:16:03,738 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:03] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:04,618 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:16:04,621 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:04] "GET /notifyedit HTTP/1.1" 200 -
+2021-07-15 15:16:04,636 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:04] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:04,640 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:04] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:04,640 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:04] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:04,640 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:04] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:04,642 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:04] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:04,644 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:04] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:04,645 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:04] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:04,647 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:04] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:04,648 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:04] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:04,649 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:04] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:04,650 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:04] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:04,651 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:04] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:04,652 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:04] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:04,653 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:04] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:04,655 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:04] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:04,656 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:04] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:04,657 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:04] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:04,659 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:04] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:04,660 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:04] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:04,661 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:04] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:04,662 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:04] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:16:06,481 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:16:06,485 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:06] "GET /notifyedit HTTP/1.1" 200 -
+2021-07-15 15:16:06,499 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:06] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:06,504 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:06] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:06,504 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:06] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:06,505 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:06] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:06,505 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:06] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:06,505 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:06] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:06,506 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:06] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:06,508 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:06] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:06,515 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:06] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:06,515 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:06] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:06,516 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:06] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:06,516 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:06] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:06,517 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:06] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:06,519 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:06] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:06,520 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:06] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:06,521 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:06] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:06,522 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:06] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:06,526 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:06] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:06,526 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:06] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:06,527 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:06] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:06,528 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:06] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:16:08,402 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:16:08,404 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `cfgnotify` AS `t1`) AS `_wrapped`', [])
+2021-07-15 15:16:08,405 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`check_order`, `t1`.`notify_type`, `t1`.`notify_name`, `t1`.`notify_number`, `t1`.`status` FROM `cfgnotify` AS `t1` LIMIT %s OFFSET %s', [10, 0])
+2021-07-15 15:16:08,406 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:08] "GET /notifylist HTTP/1.1" 200 -
+2021-07-15 15:16:08,425 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:08] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:08,425 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:08] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:08,427 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:08] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:08,430 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:08] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:08,432 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:08] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:08,433 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:08] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:08,434 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:08] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:08,435 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:08] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:08,436 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:08] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:08,438 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:08] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:08,439 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:08] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:08,440 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:08] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:08,440 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:08] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:08,444 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:08] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:08,446 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:08] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:08,447 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:08] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:08,448 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:08] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:08,449 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:08] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:08,451 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:08] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:08,452 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:08] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:08,452 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:08] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:16:11,480 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:16:11,484 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:11] "GET /notifyedit HTTP/1.1" 200 -
+2021-07-15 15:16:11,500 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:11] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:11,501 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:11] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:11,502 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:11] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:11,503 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:11] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:11,503 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:11] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:11,505 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:11] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:11,505 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:11] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:11,508 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:11] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:11,509 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:11] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:11,511 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:11] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:11,513 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:11] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:11,514 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:11] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:11,516 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:11] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:11,517 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:11] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:11,518 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:11] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:11,520 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:11] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:11,521 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:11] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:11,521 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:11] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:11,523 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:11] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:11,524 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:11] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:11,525 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:11] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:16:14,697 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:16:14,698 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `cfgnotify` AS `t1`) AS `_wrapped`', [])
+2021-07-15 15:16:14,699 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`check_order`, `t1`.`notify_type`, `t1`.`notify_name`, `t1`.`notify_number`, `t1`.`status` FROM `cfgnotify` AS `t1` LIMIT %s OFFSET %s', [10, 0])
+2021-07-15 15:16:14,701 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:14] "GET /notifylist HTTP/1.1" 200 -
+2021-07-15 15:16:14,717 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:14] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:14,721 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:14] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:14,721 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:14] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:14,721 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:14] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:14,722 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:14] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:14,723 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:14] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:14,724 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:14] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:14,726 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:14] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:14,731 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:14] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:14,731 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:14] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:14,732 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:14] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:14,733 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:14] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:14,734 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:14] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:14,735 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:14] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:14,736 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:14] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:14,737 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:14] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:14,738 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:14] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:14,740 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:14] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:14,742 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:14] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:14,743 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:14] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:14,744 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:14] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:16:15,826 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:16:15,829 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:15] "GET /notifyedit HTTP/1.1" 200 -
+2021-07-15 15:16:15,846 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:15] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:15,847 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:15] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:15,849 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:15] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:15,850 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:15] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:15,851 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:15] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:15,853 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:15] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:15,854 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:15] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:15,854 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:15] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:15,856 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:15] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:15,857 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:15] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:15,858 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:15] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:15,861 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:15] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:15,862 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:15] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:15,863 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:15] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:15,866 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:15] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:15,866 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:15] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:15,867 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:15] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:15,869 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:15] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:15,869 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:15] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:15,871 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:15] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:16:15,871 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:15] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:18,848 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:16:18,851 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:18] "GET /notifyedit HTTP/1.1" 200 -
+2021-07-15 15:16:18,866 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:18] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:18,869 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:18] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:18,870 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:18] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:18,870 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:18] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:18,870 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:18] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:18,871 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:18] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:18,873 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:18] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:18,875 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:18] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:18,876 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:18] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:18,877 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:18] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:18,880 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:18] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:18,881 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:18] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:18,882 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:18] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:18,883 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:18] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:18,884 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:18] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:18,886 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:18] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:18,886 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:18] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:18,888 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:18] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:18,888 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:18] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:18,890 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:18] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:18,891 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:18] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:16:22,465 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:16:22,485 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `cfgnotify` AS `t1`) AS `_wrapped`', [])
+2021-07-15 15:16:22,485 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`check_order`, `t1`.`notify_type`, `t1`.`notify_name`, `t1`.`notify_number`, `t1`.`status` FROM `cfgnotify` AS `t1` LIMIT %s OFFSET %s', [10, 0])
+2021-07-15 15:16:22,487 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:22] "GET /notifylist HTTP/1.1" 200 -
+2021-07-15 15:16:22,504 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:22] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:22,509 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:22] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:22,509 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:22] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:22,510 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:22] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:22,510 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:22] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:22,512 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:22] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:22,512 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:22] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:22,514 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:22] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:22,516 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:22] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:22,517 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:22] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:22,518 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:22] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:22,519 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:22] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:22,520 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:22] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:22,521 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:22] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:22,522 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:22] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:22,526 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:22] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:22,526 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:22] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:22,527 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:22] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:22,528 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:22] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:22,529 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:22] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:16:22,531 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:22] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:23,256 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:16:23,259 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:23] "GET /notifyedit HTTP/1.1" 200 -
+2021-07-15 15:16:23,277 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:23] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:23,280 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:23] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:23,280 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:23] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:23,282 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:23] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:23,284 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:23] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:23,285 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:23] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:23,286 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:23] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:23,287 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:23] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:23,288 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:23] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:23,289 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:23] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:16:23,291 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:23] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:23,292 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:23] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:23,294 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:23] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:23,294 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:23] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:23,296 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:23] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:23,298 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:23] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:23,299 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:23] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:23,300 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:23] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:23,301 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:23] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:16:23,302 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:23] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:16:23,303 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:16:23] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:18:48,588 werkzeug     INFO      * Detected change in 'E:\\scripts\\flask-adminlte-scaffold\\app\\main\\views.py', reloading
+2021-07-15 15:18:48,608 werkzeug     INFO      * Restarting with stat
+2021-07-15 15:23:12,142 werkzeug     INFO      * Restarting with stat
+2021-07-15 15:23:12,322 werkzeug     WARNING   * Debugger is active!
+2021-07-15 15:23:12,323 werkzeug     INFO      * Debugger PIN: 619-803-134
+2021-07-15 15:23:12,376 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-15 15:23:15,668 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:23:15,687 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:15] "GET /notifyedit HTTP/1.1" 200 -
+2021-07-15 15:23:16,085 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:16] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:16,085 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:16] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:16,085 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:16] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:16,086 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:16] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:16,091 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:16] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:16,091 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:16] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:16,092 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:16] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:16,092 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:16] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:16,093 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:16] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:16,095 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:16] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:16,097 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:16] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:16,098 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:16] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:16,100 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:16] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:16,100 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:16] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:16,101 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:16] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:16,103 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:16] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:16,107 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:16] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:16,108 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:16] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:16,108 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:16] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:23:16,110 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:16] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:16,110 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:16] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:16,187 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:16] "[36mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 304 -
+2021-07-15 15:23:17,812 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:23:17,816 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:17] "GET /notifyedit HTTP/1.1" 200 -
+2021-07-15 15:23:17,833 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:17] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:17,835 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:17] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:17,836 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:17] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:17,837 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:17] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:17,838 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:17] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:17,839 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:17] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:17,841 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:17] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:17,843 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:17] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:17,844 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:17] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:17,845 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:17] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:17,846 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:17] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:17,848 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:17] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:17,849 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:17] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:17,850 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:17] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:17,851 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:17] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:17,854 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:17] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:17,856 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:17] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:17,857 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:17] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:17,859 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:17] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:17,860 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:17] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:17,860 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:17] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:23:19,779 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:23:19,797 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `cfgnotify` AS `t1`) AS `_wrapped`', [])
+2021-07-15 15:23:19,798 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`check_order`, `t1`.`notify_type`, `t1`.`notify_name`, `t1`.`notify_number`, `t1`.`status` FROM `cfgnotify` AS `t1` LIMIT %s OFFSET %s', [10, 0])
+2021-07-15 15:23:19,803 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:19] "GET /notifylist HTTP/1.1" 200 -
+2021-07-15 15:23:19,820 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:19] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:19,822 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:19] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:19,825 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:19] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:19,826 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:19] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:19,828 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:19] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:19,829 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:19] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:19,830 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:19] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:19,831 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:19] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:19,832 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:19] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:19,833 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:19] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:19,834 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:19] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:19,836 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:19] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:19,838 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:19] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:19,840 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:19] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:19,841 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:19] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:19,842 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:19] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:19,844 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:19] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:19,845 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:19] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:19,846 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:19] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:19,847 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:19] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:19,848 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:19] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:23:23,242 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:23:23,246 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:23] "GET /notifyedit HTTP/1.1" 200 -
+2021-07-15 15:23:23,260 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:23] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:23,263 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:23] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:23,265 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:23] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:23,265 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:23] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:23,265 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:23] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:23,266 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:23] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:23,268 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:23] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:23,270 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:23] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:23,272 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:23] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:23,274 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:23] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:23,276 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:23] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:23,277 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:23] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:23,278 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:23] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:23,279 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:23] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:23,280 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:23] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:23,281 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:23] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:23,282 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:23] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:23,283 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:23] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:23,285 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:23] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:23,286 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:23] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:23,287 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:23] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:23:24,731 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:23:24,746 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:24] "GET /itarea HTTP/1.1" 200 -
+2021-07-15 15:23:43,835 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:23:43,838 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:43] "GET /itarea HTTP/1.1" 200 -
+2021-07-15 15:23:48,635 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:23:48,662 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `cfgnotify` AS `t1`) AS `_wrapped`', [])
+2021-07-15 15:23:48,662 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`check_order`, `t1`.`notify_type`, `t1`.`notify_name`, `t1`.`notify_number`, `t1`.`status` FROM `cfgnotify` AS `t1` LIMIT %s OFFSET %s', [10, 0])
+2021-07-15 15:23:48,664 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:48] "GET /notifylist HTTP/1.1" 200 -
+2021-07-15 15:23:48,682 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:48] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:48,684 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:48] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:48,684 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:48] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:48,686 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:48] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:48,687 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:48] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:48,690 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:48] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:48,692 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:48] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:48,693 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:48] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:48,695 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:48] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:48,696 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:48] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:23:48,697 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:48] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:48,698 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:48] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:48,699 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:48] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:48,701 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:48] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:48,703 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:48] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:48,705 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:48] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:48,705 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:48] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:48,707 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:48] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:48,708 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:48] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:23:48,710 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:48] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:23:48,710 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:23:48] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:24:02,109 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:24:02,127 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `cfgnotify` AS `t1`) AS `_wrapped`', [])
+2021-07-15 15:24:02,128 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`check_order`, `t1`.`notify_type`, `t1`.`notify_name`, `t1`.`notify_number`, `t1`.`status` FROM `cfgnotify` AS `t1` LIMIT %s OFFSET %s', [10, 0])
+2021-07-15 15:24:02,138 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:24:02] "GET /notifylist HTTP/1.1" 200 -
+2021-07-15 15:24:02,155 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:24:02] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:24:02,157 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:24:02] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:24:02,157 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:24:02] "[36mGET /static/plugins/ionicons/css/ionicons.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:24:02,159 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:24:02] "[36mGET /static/plugins/bootstrap-slider/slider.css HTTP/1.1[0m" 304 -
+2021-07-15 15:24:02,160 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:24:02] "[36mGET /static/plugins/pace/pace.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:24:02,161 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:24:02] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:24:02,163 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:24:02] "[36mGET /static/plugins/select2/select2.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:24:02,163 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:24:02] "[36mGET /static/plugins/adminlte/css/AdminLTE.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:24:02,165 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:24:02] "[36mGET /static/plugins/adminlte/css/skins/skin-blue.min.css HTTP/1.1[0m" 304 -
+2021-07-15 15:24:02,166 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:24:02] "[36mGET /static/css/global.css HTTP/1.1[0m" 304 -
+2021-07-15 15:24:02,166 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:24:02] "[36mGET /static/plugins/jQuery/jquery-2.2.3.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:24:02,167 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:24:02] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:24:02,169 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:24:02] "[36mGET /static/plugins/slimScroll/jquery.slimscroll.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:24:02,171 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:24:02] "[36mGET /static/plugins/fastclick/fastclick.js HTTP/1.1[0m" 304 -
+2021-07-15 15:24:02,173 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:24:02] "[36mGET /static/plugins/bootstrap-slider/bootstrap-slider.js HTTP/1.1[0m" 304 -
+2021-07-15 15:24:02,174 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:24:02] "[36mGET /static/plugins/pace/pace.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:24:02,174 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:24:02] "[36mGET /static/plugins/bootstrap-switch/bootstrap-switch.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:24:02,176 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:24:02] "[36mGET /static/plugins/select2/select2.full.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:24:02,177 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:24:02] "[36mGET /static/plugins/adminlte/js/app.min.js HTTP/1.1[0m" 304 -
+2021-07-15 15:24:02,178 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:24:02] "[36mGET /static/js/global.js HTTP/1.1[0m" 304 -
+2021-07-15 15:24:02,179 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:24:02] "[36mGET /static/images/avatar.jpg HTTP/1.1[0m" 304 -
+2021-07-15 15:24:04,131 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:24:04,133 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:24:04] "GET /itarea HTTP/1.1" 200 -
+2021-07-15 15:25:45,844 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:25:45,846 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:25:45] "GET /itarea HTTP/1.1" 200 -
+2021-07-15 15:25:48,665 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:25:48,668 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:25:48] "GET /itarea HTTP/1.1" 200 -
+2021-07-15 15:26:45,185 werkzeug     INFO      * Detected change in 'E:\\scripts\\flask-adminlte-scaffold\\app\\main\\views.py', reloading
+2021-07-15 15:26:45,205 werkzeug     INFO      * Restarting with stat
+2021-07-15 15:29:38,405 werkzeug     INFO      * Restarting with stat
+2021-07-15 15:29:38,585 werkzeug     WARNING   * Debugger is active!
+2021-07-15 15:29:38,587 werkzeug     INFO      * Debugger PIN: 619-803-134
+2021-07-15 15:29:38,638 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2021-07-15 15:29:42,129 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:29:42,132 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:29:42] "GET /itarea HTTP/1.1" 200 -
+2021-07-15 15:29:45,394 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:29:45,420 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:29:45] "[35m[1mGET /notifyedit HTTP/1.1[0m" 500 -
+2021-07-15 15:29:45,574 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:29:45] "GET /notifyedit?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2021-07-15 15:29:45,574 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:29:45] "GET /notifyedit?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2021-07-15 15:29:45,582 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:29:45] "GET /notifyedit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2021-07-15 15:29:45,618 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:29:45] "GET /notifyedit?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2021-07-15 15:29:45,630 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:29:45] "GET /notifyedit?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2021-07-15 15:29:53,268 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`fullname`, `t1`.`email`, `t1`.`phone`, `t1`.`status` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2021-07-15 15:29:53,270 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `cfgnotify` AS `t1`) AS `_wrapped`', [])
+2021-07-15 15:29:53,271 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`check_order`, `t1`.`notify_type`, `t1`.`notify_name`, `t1`.`notify_number`, `t1`.`status` FROM `cfgnotify` AS `t1` LIMIT %s OFFSET %s', [10, 0])
+2021-07-15 15:29:53,286 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:29:53] "[35m[1mGET /notifylist HTTP/1.1[0m" 500 -
+2021-07-15 15:29:53,305 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:29:53] "GET /notifylist?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2021-07-15 15:29:53,307 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:29:53] "GET /notifylist?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2021-07-15 15:29:53,312 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:29:53] "GET /notifylist?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2021-07-15 15:29:53,327 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:29:53] "GET /notifylist?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+2021-07-15 15:29:53,338 werkzeug     INFO     127.0.0.1 - - [15/Jul/2021 15:29:53] "GET /notifylist?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
