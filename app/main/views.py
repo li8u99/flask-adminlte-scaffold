@@ -7,6 +7,7 @@ from app.models import CfgNotify
 from app.main.forms import CfgNotifyForm
 from . import main
 
+
 logger = get_logger(__name__)
 cfg = get_config()
 
@@ -93,11 +94,7 @@ def notifylist():
 def notifyedit():
     return common_edit(CfgNotify, CfgNotifyForm(), 'notifyedit.html')
 
-# 办公设备资产管理
-@main.route('/itarea', methods=['GET', 'POST'])
-@login_required
-def itarea():
-    return render_template('itarea.html')
+
 
 # 域名资产管理
 @main.route('/domains', methods=['GET', 'POST'])

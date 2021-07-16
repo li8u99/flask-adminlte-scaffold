@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}办公设备资产管理{% endblock %}
-
-
+{% block title %}办公设备管理{% endblock %}
 {% block navbar %}
 <section class="content-header">
     <h1>办公设备资产管理</h1>
@@ -14,52 +12,64 @@
 </section>
 {% endblock %}
 
-
 {% block content %}
 <div class="box box-primary">
     <div class="box-header with-border">
-        {% include 'message.html' %}
-    </div>
-    <div class="box-body">
-        <div>
-        <form method="post" action="">
-            <input type="text" name="content" id="content" placeholder="请输入搜索内容">
-            <input type="submit" value="搜索">
 
-        </form>
-        </div>
+    </div>
+
+    <div class="box-body">
+        <div class="col-lg-6">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="请输入姓名进行搜索">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Go!</button>
+                </span>
+                <span style="float: right">
+                    <button class="btn btn-default"  type="button">新增</button>
+                </span>
+            </div><!-- /input-group -->
+
+        </div><!-- /.col-lg-6 -->
+
         <table class="table table-bordered">
             <tr>
                 <th>ID</th>
                 <th>所属部门</th>
-                <th>姓名</th>
+                <th>员工姓名</th>
                 <th>IP地址</th>
-                <th>设备MAC</th>
+                <th>台式电脑MAC</th>
+                <th>笔记本电脑MAC</th>
+                <th>手机MAC</th>
                 <th>编辑</th>
                 <th>删除</th>
             </tr>
-
+            {% for item in data %}
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>{{item[0]}}</td>
+                <td>{{item[1]}}</td>
+                <td>{{item[2]}}</td>
+                <td>{{item[3]}}</td>
+                <td>{{item[4]}}</td>
+                <td>{{item[5]}}</td>
+                <td>{{item[6]}}</td>
                 <td><a class='fa fa-lg fa-edit text-light-blue' href=''></a></td>
                 <td><a class='fa fa-lg fa-warning text-red' href=''></a></td>
             </tr>
-
+            {% endfor %}
         </table>
 
     </div>
+
     <div class="box-footer clearfix">
 
         <ul class="pagination pagination-sm no-margin pull-right">
             <li><a href="#">&laquo;</a></li>
 
-            <li><a href="?page={{i}}"><b>{{i}}</b></a></li>
 
-            <li><a href="?page={{i}}">{{i}}</a></li>
+            <li><a href="?page={{i}}"><b>1</b></a></li>
+
+            <li><a href="?page={{i}}"><b>2</b></a></li>
 
 
             <li><a href="#">&raquo;</a></li>
@@ -70,24 +80,5 @@
 {% endblock %}
 
 {% block scripts %}
-<script>
-    function initPage() {
-        slide_value = $(".slider").val() == "" ? 50 : parseInt($(".slider").val());
-        $(".slider").slider({
-            id: "blue",
-            max: 100,
-            value: slide_value
-        });
 
-        switch_value = $('#status')[0].checked
-        $('#status').bootstrapSwitch({
-            state: switch_value,
-            onText: '生效',
-            offText: '失效'
-
-        });
-
-        $(".select2").select2();
-    }
-</script>
 {% endblock %}

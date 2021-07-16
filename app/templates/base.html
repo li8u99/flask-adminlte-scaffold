@@ -17,12 +17,18 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='plugins/adminlte/css/AdminLTE.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='plugins/adminlte/css/skins/skin-blue.min.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/global.css') }}">
+<!--    <link rel="stylesheet" href="{{ url_for('static', filename='plugins/element/index.css') }}">-->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
     <!--[if lt IE 9]>
     <script src="plugins/html5shiv.min.js"></script>
     <script src="plugins/respond.min.js"></script>
+
     <![endif]-->
+
+
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
+
 <div class="wrapper">
     <!--头部-->
     <header class="main-header">
@@ -176,6 +182,8 @@
 <script src="{{ url_for('static', filename='plugins/select2/select2.full.min.js') }}"></script>
 <script src="{{ url_for('static', filename='plugins/adminlte/js/app.min.js') }}"></script>
 <script src="{{ url_for('static', filename='js/global.js') }}"></script>
+
 {% block scripts %}{% endblock %}
+
 </body>
 </html>

@@ -151,3 +151,8 @@
 .column-center {
     text-align: center;
 }
+
+/*搜索框靠右显示*/
+.search-right {
+    float:right;
+}

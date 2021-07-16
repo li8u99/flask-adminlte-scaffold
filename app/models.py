@@ -50,6 +50,10 @@ class CfgNotify(BaseModel):
     status = BooleanField(default=True)  # 生效失效标识
 
 
+
+
+
+
 @login_manager.user_loader
 def load_user(user_id):
     return User.get(User.id == int(user_id))
